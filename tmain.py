@@ -5,7 +5,7 @@ from OpenGL.GLU import *
 
 # Scale variables
 scaleX, scaleY = 1.0, 1.0
-Sx, Sy = 0.1, 0.1 
+Sx, Sy = 0.5, 1.6 
 
 
 def draw_triangle():
@@ -34,6 +34,11 @@ def keyboard(key, x, y):
         scaleX += Sx
         scaleY += Sy
 
+    if key == b'-':
+        scaleX -= Sx
+        scaleY -= Sy
+
+        
 
 
     glutPostRedisplay()
