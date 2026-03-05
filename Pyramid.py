@@ -121,6 +121,8 @@ glutDisplayFunc(display)
 glutKeyboardFunc(keyboard)
 
 
+
+
 print("Controls: X/Y/Z to rotate, +/- to scale. Translation disabled.")
 
 
